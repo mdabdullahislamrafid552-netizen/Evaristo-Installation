@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="bg-stone-50">
       {/* Hero */}
-      <section className="relative h-screen flex flex-col justify-end pb-24 px-6 md:px-12">
+      <section className="relative min-h-[100svh] flex flex-col justify-end pb-24 px-6 md:px-12">
         <div className="absolute inset-0 overflow-hidden">
           <motion.img 
             initial={{ scale: 1.1 }}
@@ -36,7 +36,7 @@ export default function Home() {
         <div className="relative z-10 max-w-[1400px] mx-auto w-full">
           <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-4xl">
             <p className="text-brand-gold tracking-[0.2em] uppercase text-sm mb-6">Premium Craftsmanship</p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.1] mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-[1.1] mb-8">
               Mastering <span className="italic font-light">the art</span> <br/>of luxury stone.
             </h1>
             <div className="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
@@ -52,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Intro / Philosophy */}
-      <section className="py-32 px-6 md:px-12">
+      <section className="py-20 md:py-32 px-6 md:px-12">
         <div className="max-w-[1400px] mx-auto grid md:grid-cols-2 gap-16 items-center">
           <motion.div 
             initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUp}
@@ -80,9 +80,9 @@ export default function Home() {
       </section>
 
       {/* Services Bento/Editorial */}
-      <section className="py-32 px-6 md:px-12 bg-brand-blue text-stone-50">
+      <section className="py-20 md:py-32 px-6 md:px-12 bg-brand-blue text-stone-50">
         <div className="max-w-[1400px] mx-auto">
-          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="mb-20">
+          <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="mb-12 md:mb-20">
             <p className="tracking-[0.2em] uppercase text-xs text-brand-gold mb-4">Expertise</p>
             <h2 className="text-5xl md:text-6xl font-serif">Our Services</h2>
           </motion.div>
@@ -116,9 +116,9 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-32 px-6 md:px-12 text-center bg-brand-gold/10">
+      <section className="py-20 md:py-32 px-6 md:px-12 text-center bg-brand-gold/10">
         <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} className="max-w-3xl mx-auto">
-          <h2 className="text-5xl md:text-7xl font-serif mb-8 text-stone-900">Ready to transform your space?</h2>
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-serif mb-8 text-stone-900">Ready to transform your space?</h2>
           <p className="text-stone-600 mb-12 text-lg">Contact us today to schedule your complimentary consultation and estimate.</p>
           <Link to="/contact" className="inline-block bg-brand-blue text-white px-10 py-5 text-xs tracking-widest uppercase hover:bg-brand-blue/90 transition-colors">
             Request Consultation

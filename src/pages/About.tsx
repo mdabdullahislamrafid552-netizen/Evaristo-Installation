@@ -7,11 +7,11 @@ const fadeUp = {
 
 export default function About() {
   return (
-    <div className="bg-stone-50 pt-32 pb-20">
+    <div className="bg-stone-50 pt-24 md:pt-32 pb-16 md:pb-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-4xl mb-24">
+        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="max-w-4xl mb-16 md:mb-24">
           <p className="tracking-[0.2em] uppercase text-xs text-brand-gold mb-6">Our Story</p>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
             A legacy built on <span className="italic text-brand-gold">precision</span> and passion.
           </h1>
         </motion.div>
@@ -38,14 +38,14 @@ export default function About() {
               From expansive commercial lobbies to intimate residential bathrooms, we approach every installation with the same unwavering commitment to excellence. We don't just meet expectations; we redefine them.
             </p>
             
-            <div className="pt-12 grid grid-cols-2 gap-8 border-t border-stone-200 mt-12">
+            <div className="pt-8 md:pt-12 grid grid-cols-2 gap-6 md:gap-8 border-t border-stone-200 mt-8 md:mt-12">
               <div>
-                <p className="text-4xl font-serif text-brand-blue mb-2">15+</p>
-                <p className="text-xs tracking-widest uppercase text-brand-gold">Years Experience</p>
+                <p className="text-3xl md:text-4xl font-serif text-brand-blue mb-2">15+</p>
+                <p className="text-[10px] md:text-xs tracking-widest uppercase text-brand-gold">Years Experience</p>
               </div>
               <div>
-                <p className="text-4xl font-serif text-brand-blue mb-2">500+</p>
-                <p className="text-xs tracking-widest uppercase text-brand-gold">Projects Completed</p>
+                <p className="text-3xl md:text-4xl font-serif text-brand-blue mb-2">500+</p>
+                <p className="text-[10px] md:text-xs tracking-widest uppercase text-brand-gold">Projects Completed</p>
               </div>
             </div>
           </motion.div>

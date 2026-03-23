@@ -28,15 +28,15 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="bg-stone-50 pt-32 pb-20">
+    <div className="bg-stone-50 pt-24 md:pt-32 pb-16 md:pb-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-32">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
+        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-16 md:mb-32">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
             Our <span className="italic text-brand-gold">Expertise</span>
           </h1>
         </motion.div>
 
-        <div className="space-y-32">
+        <div className="space-y-20 md:space-y-32">
           {services.map((service, index) => (
             <motion.section 
               key={service.id}

@@ -36,10 +36,10 @@ const projects = [
 
 export default function Projects() {
   return (
-    <div className="bg-stone-50 pt-32 pb-20">
+    <div className="bg-stone-50 pt-24 md:pt-32 pb-16 md:pb-20">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-20">
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
+        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-16 md:mb-20">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-serif leading-[1.1] text-brand-blue">
             Selected <span className="italic text-brand-gold">Works</span>
           </h1>
         </motion.div>

@@ -7,14 +7,14 @@ const fadeUp = {
 
 export default function Contact() {
   return (
-    <div className="bg-stone-50 pt-32 pb-20 min-h-screen">
+    <div className="bg-stone-50 pt-24 md:pt-32 pb-16 md:pb-20 min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <div className="grid md:grid-cols-2 gap-20">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20">
           <motion.div initial="hidden" animate="visible" variants={fadeUp}>
-            <h1 className="text-5xl md:text-7xl font-serif leading-[1.1] text-brand-blue mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif leading-[1.1] text-brand-blue mb-6 md:mb-8">
               Let's discuss your <span className="italic text-brand-gold">vision.</span>
             </h1>
-            <p className="text-stone-600 text-lg mb-12 max-w-md">
+            <p className="text-stone-600 text-base md:text-lg mb-8 md:mb-12 max-w-md">
               Reach out to schedule a complimentary consultation. We look forward to bringing your project to life with unparalleled craftsmanship.
             </p>
             
@@ -32,7 +32,7 @@ export default function Contact() {
 
           <motion.div 
             initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white p-10 md:p-16 shadow-2xl shadow-stone-200/50"
+            className="bg-white p-8 md:p-16 shadow-2xl shadow-stone-200/50"
           >
             <form className="space-y-8" onSubmit={(e) => e.preventDefault()}>
               <div className="space-y-2">

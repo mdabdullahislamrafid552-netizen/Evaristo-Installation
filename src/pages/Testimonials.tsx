@@ -13,10 +13,10 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="bg-brand-blue text-stone-50 pt-32 pb-32 min-h-screen">
+    <div className="bg-brand-blue text-stone-50 pt-24 md:pt-32 pb-24 md:pb-32 min-h-screen">
       <div className="max-w-[1400px] mx-auto px-6 md:px-12">
-        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-24 text-center">
-          <h1 className="text-5xl md:text-7xl font-serif leading-[1.1] text-white">
+        <motion.div initial="hidden" animate="visible" variants={fadeUp} className="mb-16 md:mb-24 text-center">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif leading-[1.1] text-white">
             Client <span className="italic text-brand-gold">Reflections</span>
           </h1>
         </motion.div>
